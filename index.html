@@ -143,14 +143,12 @@
     position:relative;
     overflow:hidden;
   }
-  .hero::after{
-    content:'';
-    position:absolute; top:-200px; right:-160px;
-    width:640px; height:640px; border-radius:50%;
-    background:radial-gradient(circle, var(--purple-glow), transparent 70%);
-    filter:blur(40px);
-    pointer-events:none;
-  }
+ .hero-photo::after{
+  content:'';
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.5));
+  pointer-events:none;
+}
   .hero-grid{
     display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center;
   }
